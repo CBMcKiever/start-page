@@ -9,3 +9,12 @@ function displayTimeOfDay() {
 
 const greeting = document.getElementById('greeting');
 greeting.textContent = `Good ${displayTimeOfDay()}, Cole.`;
+
+fetch("https://quotes.rest/qod.json?category=inspire")
+.then(response => {
+    return response.json();
+})
+.then(json => {
+    let qod = json.contents.quotes[0];
+    const quoteBox = document.querySelector()
+})
