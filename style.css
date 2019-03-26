@@ -1,0 +1,67 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+html {
+    display: table;
+    margin: auto;
+}
+body {
+    background-image: url(./images/background.jpg);
+    background-size: cover;
+    display: table-cell;
+    vertical-align: middle;
+}
+.main-title {
+    font-size: 2.5em;
+    font-weight: 100;
+    text-align: center;
+    color: #FCFCFC;
+}
+.container-root {
+    display: flex;
+}
+.search-container {
+    margin: 15px;
+}
+.search-column {
+    background-color:#FCFCFC;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+}
+#google-icon {
+    height: 65px;
+    width: 65px;
+}
+.panel {
+    background-color: #FAEACB;
+    margin: 15px;
+    height: 25%;
+    width: auto;
+    border-radius: 10px;
+}
+.panels-container {
+    width: 65%;
+}
+.news-container {
+    background-color: #DBD7CC;
+    margin: 15px;
+    width: 35%;
+    border-radius: 10px;
+}
+.quote-column {
+    background-color: #FCFCFC;
+    margin: 15px;
+    border-radius: 10px;
+}
+.panel-title {
+    font-size: 2.5em;
+    font-weight: 100;
+    text-align: center;
+}
+.search-title {
+    font-size: 2.5em;
+    font-weight: 100;
+}

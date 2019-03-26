@@ -1,0 +1,241 @@
+.filtered-list-dropdown-menu {
+  white-space: nowrap;
+  position: relative;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.filtered-list-dropdown-menu:hover, .filtered-list-dropdown-menu.menu-opened {
+  background-color: rgba( 234, 234, 234 ,  1 );
+  background-color: rgba( var(--palette-neutral-8,234, 234, 234) ,  1 );
+}
+
+.filtered-list-dropdown-menu .selected-item-text {
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.filtered-list-dropdown-menu .drop-icon {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.filtered-list-popup {
+  background-color: rgba( 234, 234, 234 ,  1 );
+  background-color: rgba( var(--palette-neutral-8,234, 234, 234) ,  1 );
+  border:  1px solid;
+  border-color: rgba( 200, 200, 200 ,  1 );
+  border-color: rgba( var(--palette-neutral-20,200, 200, 200) ,  1 );
+  font-size: 12px;
+}
+
+.filtered-list-popup .filtered-list-control {
+  padding-bottom: 10px;
+}
+
+.filtered-list-popup .filtered-list-control .filtered-list {
+  max-height: 300px;
+  overflow: auto;
+}
+
+.filtered-list-control .views {
+  float: none;
+}
+
+.filtered-list-control .filter-container {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+}
+
+.filtered-list-control .filter-container input {
+  width: 100%;
+  outline: 0;
+  border:  1px solid;
+  border-color: rgba( 200, 200, 200 ,  1 );
+  border-color: rgba( var(--palette-neutral-20,200, 200, 200) ,  1 );
+}
+
+.filtered-list-control .filter-content .filtered-list-search-container {
+  overflow: hidden;
+}
+
+.filtered-list-control .filter-content .filtered-list-search-icon {
+  float: right;
+}
+
+.filtered-list-control .filtered-list {
+  margin: 5px 0 0 0;
+  padding-right: 10px;
+  padding-left: 10px;
+  outline: none;
+}
+
+.filtered-list-control .filtered-list > li {
+  list-style-type: none;
+  padding: 0.3em;
+  margin: 1px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  position: relative;
+  vertical-align: middle;
+  outline: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+.filtered-list-control .filtered-list > li.current-item {
+  font-weight: 700;
+}
+
+.filtered-list-control .filtered-list > li.new-selection {
+  background-color: rgba( 16, 110, 190 ,  1 );
+  background-color: rgba( var(--palette-primary-shade-10,16, 110, 190) ,  1 );
+  color: rgba(255, 255, 255, 1);
+  color: var(--background-color,rgba(255, 255, 255, 1));
+}
+
+.filtered-list-control .filtered-list > li.message {
+  color: rgba(0, 0, 0, .55);
+  color: var(--text-secondary-color,rgba(0, 0, 0, .55));
+  cursor: default;
+  white-space: normal;
+  overflow: visible;
+}
+
+.filtered-list-control .filtered-list > li.message.show-more-item {
+  cursor: pointer;
+}
+
+.filtered-list-control .filtered-list > li > .icon {
+  margin-right: 6px;
+  vertical-align: top;
+}
+
+.filtered-list-control .list-message {
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 4px;
+  color: rgba(0, 0, 0, .55);
+  color: var(--text-secondary-color,rgba(0, 0, 0, .55));
+}
+
+/* bowtie-filtered-list styles */
+.filtered-list-control.bowtie-filtered-list,
+.filtered-list-control.bowtie-filtered-list .views {
+  font-size: 13px;
+}
+
+.filtered-list-control.bowtie-filtered-list .filtered-list {
+  padding: 0px;
+  margin: 0px 0px 4px 0px;
+}
+
+.filtered-list-control.bowtie-filtered-list .filtered-list-item {
+  height: 30px;
+}
+
+.filtered-list-control.bowtie-filtered-list .filtered-list > li.current-item {
+  font-weight: 700;
+}
+
+.filtered-list-control.bowtie-filtered-list .filtered-list > li {
+  padding: 5px 10px;
+  border: none;
+}
+
+.filtered-list-control.bowtie-filtered-list .filtered-list > li > .filtered-list-favorite {
+  float: right;
+  margin: -5px -10px 0 0;
+  padding: 8px 10px;
+  width: 36px;
+  height: 30px;
+  outline: none;
+}
+
+.filtered-list-control.bowtie-filtered-list .filtered-list > li > .bowtie-favorite-outline {
+  opacity: 0;
+  color: rgba(0, 0, 0, .9);
+  color: var(--text-primary-color,rgba(0, 0, 0, .9));
+}
+
+.filtered-list-control.bowtie-filtered-list .filtered-list > li.new-selection > .bowtie-favorite-outline {
+  opacity: 1;
+}
+
+.filtered-list-control.bowtie-filtered-list .filtered-list > li.new-selection > .bowtie-favorite-outline:hover, .filtered-list-control.bowtie-filtered-list .filtered-list > li.new-selection > .bowtie-favorite-outline:focus {
+  color: #ffbe00;
+}
+
+.filtered-list-control.bowtie-filtered-list .filtered-list > li > .filtered-list-favorite:focus::before {
+  border:  1px solid;
+  border-color: rgba( 102, 102, 102 ,  1 );
+  border-color: rgba( var(--palette-neutral-60,102, 102, 102) ,  1 );
+}
+
+.filtered-list-control.bowtie-filtered-list .filtered-list-tab {
+  font-weight: normal;
+}
+
+.filtered-list-control.bowtie-filtered-list .filtered-list-tab.selected {
+  font-weight: 600;
+}
+
+.filtered-list-control.bowtie-filtered-list .filtered-list-tab.selected::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  height: 2px;
+  background-color: rgba(0, 120, 212, 1);
+  background-color: var(--communication-background,rgba(0, 120, 212, 1));
+}
+
+.filtered-list-control.bowtie-filtered-list .filtered-list-tab:first-child.selected::before {
+  left: 0;
+}
+
+.filtered-list-control.bowtie-filtered-list .filtered-list-tab > a {
+  outline: none;
+}
+
+.filtered-list-control .filtered-list > li.new-selection:focus {
+  /* High contrast dashed border when focused. */
+}
+
+.filtered-list-control.bowtie-filtered-list .filtered-list-tab > a:focus::after,
+.filtered-list-control .filtered-list > li.new-selection::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  border:  1px solid;
+  border-color: rgba( 166, 166, 166 ,  1 );
+  border-color: rgba( var(--palette-neutral-30,166, 166, 166) ,  1 );
+}
+
+.filtered-list-control.bowtie-filtered-list .filtered-list-tab > a:focus::after,
+.filtered-list-control .filtered-list > li.new-selection:focus::after {
+  border:  1px solid;
+  border-color: rgba( 102, 102, 102 ,  1 );
+  border-color: rgba( var(--palette-neutral-60,102, 102, 102) ,  1 );
+}
+
+.filtered-list-control.bowtie-filtered-list .filter-container {
+  padding: 10px;
+}
